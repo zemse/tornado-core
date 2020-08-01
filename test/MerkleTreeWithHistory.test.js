@@ -1,10 +1,10 @@
-/* global artifacts, web3, contract, assert */
+/* global artifacts, web3, contract */
 require('chai')
   .use(require('bn-chai')(web3.utils.BN))
   .use(require('chai-as-promised'))
   .should()
 
-const { takeSnapshot, revertSnapshot } = require('../lib/ganacheHelper')
+const { takeSnapshot, revertSnapshot } = require('../scripts/ganacheHelper')
 
 const MerkleTreeWithHistory = artifacts.require('./MerkleTreeWithHistoryMock.sol')
 const hasherContract = artifacts.require('./Hasher.sol')

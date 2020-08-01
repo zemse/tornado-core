@@ -1,7 +1,7 @@
 dist: trusty
 language: node_js
 node_js:
-  - "11"
+  - "12"
 install:
   - npm ci
   - cp .env.example .env
@@ -11,4 +11,4 @@ install:
 script:
   - npm run test
   - npm run eslint
-  - node cli.js test
+  - node src/cli.js test

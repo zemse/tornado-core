@@ -6,7 +6,7 @@ require('chai')
 const fs = require('fs')
 
 const { toBN, randomHex } = require('web3-utils')
-const { takeSnapshot, revertSnapshot } = require('../lib/ganacheHelper')
+const { takeSnapshot, revertSnapshot } = require('../scripts/ganacheHelper')
 
 const Tornado = artifacts.require('./ETHTornado.sol')
 const { ETH_AMOUNT, MERKLE_TREE_HEIGHT } = process.env
